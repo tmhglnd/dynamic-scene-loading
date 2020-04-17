@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 34.0, 78.0, 829.0, 784.0 ],
+		"rect" : [ 35.0, 78.0, 829.0, 784.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -38,6 +38,44 @@
 		"style" : "",
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-19",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 243.0, 456.0, 78.0, 22.0 ],
+					"presentation_linecount" : 3,
+					"text" : "glow pixelate"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-16",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 243.0, 334.0, 95.0, 22.0 ],
+					"presentation_linecount" : 2,
+					"text" : "glow blackWhite"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-13",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 243.0, 420.0, 33.0, 22.0 ],
+					"text" : "glow"
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"id" : "obj-15",
 					"maxclass" : "message",
@@ -573,7 +611,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 360.0, 90.0, 80.0, 35.0 ]
+					"patching_rect" : [ 366.0, 90.0, 80.0, 35.0 ]
 				}
 
 			}
@@ -824,6 +862,13 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-44", 0 ],
+					"source" : [ "obj-13", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-33", 0 ],
 					"source" : [ "obj-15", 0 ]
 				}
@@ -831,8 +876,22 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-44", 0 ],
+					"source" : [ "obj-16", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-6", 0 ],
 					"source" : [ "obj-17", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-44", 0 ],
+					"source" : [ "obj-19", 0 ]
 				}
 
 			}
@@ -1017,9 +1076,16 @@
 		}
 ,
 		"dependency_cache" : [ 			{
-				"name" : "_emptyScene.maxpat",
-				"bootpath" : "~/Drive/work/code/max/major_projects/dynamic-scene-loading/dynamic-jitter/placeholders",
-				"patcherrelativepath" : "../placeholders",
+				"name" : "sphere.maxpat",
+				"bootpath" : "~/Drive/work/code/max/major_projects/dynamic-scene-loading/dynamic-jitter/scenes",
+				"patcherrelativepath" : "../scenes",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "cube.maxpat",
+				"bootpath" : "~/Drive/work/code/max/major_projects/dynamic-scene-loading/dynamic-jitter/scenes",
+				"patcherrelativepath" : "../scenes",
 				"type" : "JSON",
 				"implicit" : 1
 			}

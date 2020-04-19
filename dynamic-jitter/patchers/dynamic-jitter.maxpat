@@ -39,6 +39,19 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-38",
+					"linecount" : 4,
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 915.0, 255.0, 225.0, 62.0 ],
+					"text" : "mid attack 12, mid release 90, side attack 2, side release 110, lpf attack 2, lpf release 80, hpf attack 1, hpf release 150, lpf cutoff 110, hpf cutoff 1500"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-55",
 					"maxclass" : "message",
 					"numinlets" : 2,
@@ -57,7 +70,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 465.0, 45.0, 88.0, 22.0 ],
-					"presentation_linecount" : 2,
 					"text" : "dim 1920 1080"
 				}
 
@@ -70,7 +82,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 825.0, 249.0, 24.0, 24.0 ]
+					"patching_rect" : [ 836.0, 255.0, 24.0, 24.0 ]
 				}
 
 			}
@@ -81,7 +93,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 825.0, 282.0, 63.0, 22.0 ],
+					"patching_rect" : [ 836.0, 288.0, 63.0, 22.0 ],
 					"text" : "display $1"
 				}
 
@@ -1542,6 +1554,13 @@
 				"patchline" : 				{
 					"destination" : [ "obj-44", 0 ],
 					"source" : [ "obj-37", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-42", 0 ],
+					"source" : [ "obj-38", 0 ]
 				}
 
 			}
